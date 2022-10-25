@@ -1,0 +1,102 @@
+
+.Container{
+    width:100%;
+    height: 70px;
+    background-color:black;
+    box-shadow: 2px 2px 15px black;
+}
+
+@media screen and (max-width:960px){
+    .Container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        }
+}
+
+.Wrapper{
+    width: 100%;
+    max-width: 1300px;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:auto;
+}
+.LogoContainer{
+    margin-left: 0.5rem;
+    display:flex;
+    font-size:1.2rem;
+    font-family:sans-serif;
+}
+p{
+    color:#fff;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+svg{
+    color:white;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.Menu{
+    align-items:center;
+    color:white;
+    cursor: pointer;
+    display:flex;
+    font-family:sans-serif;
+    font-size:1rem;
+    font-weight:300;
+    height:100%;
+    justify-content:center;
+    margin-left: 4rem;
+    padding:0.5rem 2.5rem;
+    transition: 0.5s all ease;
+}
+
+@media screen and (max-width:960px){
+    .Menu{
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 90vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s all ease;
+    }
+}
+
+.CartShopping{
+    color:white;
+    margin-right: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.cart {
+    position: relative;
+    color:white;
+    top:1.2rem;
+    font-size: 25px;
+  }
+  
+  #cart_menu_num {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    font-size: 15px;
+    background: red;
+    width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
